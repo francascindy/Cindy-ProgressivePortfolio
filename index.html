@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cindy A. Francas — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+    
+<body>
+
+  <header class="site-header">
+  <a href="#top" class="mark">CF</a>
+  <nav id="site-nav">
+    <a href="#top">Home</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>
+
+  <main>
+    <section class="hero" id="top">
+
+  <div class="hero-profile">
+    <img src="images/profile.jpg" alt="Cindy A. Francas" class="profile-photo">
+  </div>
+
+  <p class="hero-meta">IT 110 — Web Systems and Technologies</p>
+
+  <h1>Cindy A. Francas</h1>
+
+  <h2>Section: FGNOW1</h2>
+
+  <p class="hero-sub">
+    I am a 4th Year Student in Information Technology who is passionate about
+    technology, web development, and creating useful solutions.
+  </p>
+
+  <p class="hero-tagline">
+    Aspiring IT professional and web developer.
+  </p>
+
+  <a href="#top" class="learn-more">Learn More</a>
+
+  <div class="hero-coords">
+    <span>course: IT 110</span>
+    <span>status: building</span>
+    <span>ver: 0.1</span>
+  </div>
+
+</section>
+
+    <section id="work" class="work">
+      <h2>Selected work</h2>
+
+      <article class="project">
+        <div class="project-index">01</div>
+        <div class="project-body">
+          <h3>Project One</h3>
+          <p>I Created a mini store web system, that only stores products like soap, milk, instant, shampoos and other products.</p>
+          <ul class="tags">
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-index">02</div>
+        <div class="project-body">
+          <h3>Project Two</h3>
+          <p>I Created also a Furniture Web System that only displays the lists of furnitures with their purposes.</p>
+          <ul class="tags">
+            <li>Web Systems</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-index">03</div>
+        <div class="project-body">
+          <h3>Project Three</h3>
+          <p>I Created a Sales Website system that tracks the stores stock, quantities, prices and sells.</p>
+          <ul class="tags">
+            <li>IT 110</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+
+    <section id="contact" class="contact">
+      <h2>Get in touch</h2>
+      <p>Open to feedback and collaboration.</p>
+         <a class="contact-link" href="mailto:francascindy@gmail.com">francascindy@gmail.com</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Built by Cindy A. Francas</span>
+    <span id="year"></span>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
