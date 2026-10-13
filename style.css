@@ -11,6 +11,7 @@
 }
 
 /* Background box grid */
+/* Para sa background na part*/
 * {
   box-sizing: border-box;
   margin: 0;
