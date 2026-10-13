@@ -331,73 +331,6 @@ main {
 }
 
 
-/* Contact */
-/* Para sa Contacts */
-.contact {
-  padding: 72px 0;
-}
-
-.contact p {
-  color: var(--ink-soft);
-  margin-bottom: 20px;
-  max-width: 50ch;
-}
-
-.contact-link {
-  display: inline-flex;
-  align-items: center;
-  font-family: var(--font-mono);
-  font-size: 15px;
-  color: var(--ink);
-  border-bottom: 1px solid var(--amber);
-  padding-bottom: 4px;
-  transition: color 0.15s ease;
-}
-
-.contact-link:hover {
-  color: var(--amber);
-}
-
-
-/* Footer */
-/* Sa Footer or sa pina ka last na part sa Page */
-.site-footer {
-  max-width: 780px;
-  margin: 0 auto;
-  padding: 30px 24px 60px;
-  display: flex;
-  justify-content: space-between;
-  font-family: var(--font-mono);
-  font-size: 12px;
-  color: var(--ink-soft);
-}
-
-
-/* Responsive */
-@media (max-width: 600px) {
-
-  .hero-layout {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
-  .hero-profile {
-    align-items: center;
-    text-align: center;
-  }
-
-  .hero-content {
-    text-align: center;
-  }
-
-  .hero-coords {
-    justify-content: center;
-  }
-
-
-  
-}
-
 /* Activity 4 - Show Your Projects */
 /* Para sa Porjects na part */
 
@@ -505,6 +438,7 @@ main {
   line-height: 1;
 }
 
+
 /* Activity 5 - Education and Experience */
 /* Para sa Education na part */
 
@@ -549,4 +483,90 @@ main {
     overflow-x: auto;
     white-space: nowrap;
   }
+}
+
+
+/* Activity 7 - Contact Form */
+/* Para sa Contact na part */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 480px;
+  margin-top: 20px;
+}
+
+.contact-form label {
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-family: var(--font-display);
+  transition: border-color 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--blueprint);
+}
+
+.send-btn {
+  padding: 12px 24px;
+  width: fit-content;
+  border: 1px solid var(--blueprint);
+  border-radius: 6px;
+  background: var(--blueprint);
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.send-btn:hover {
+  background: transparent;
+  color: var(--blueprint);
+}
+
+
+/* Footer */
+/* Sa Footer or sa pina ka last na part sa Page */
+.site-footer {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 30px 24px 60px;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
+
+/* Responsive */
+@media (max-width: 600px) {
+
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .hero-profile {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-coords {
+    justify-content: center;
+  }
+  
 }

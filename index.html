@@ -88,74 +88,6 @@
 
   </section>
 
-
-  <!-- Activity 4 - Show Your Projects -->
-   <!-- Section para sa Projects -->
-    <section id="projects" class="projects">
-      <h2>Projects</h2>
-
-      <div class="projects-grid">
-
-        <div class="project-card">
-          <img src="images/project-furniture.png" alt="Furniture Web System" class="project-img">
-          <h3>Furniture Web System</h3>
-          <p>A web system that displays a list of furniture items along with their purposes.</p>
-          <p class="project-tech">JavaScript, React, HTML, CSS</p>
-          <a href="#lightbox-furniture" class="view-project">View Project</a>
-        </div>
-
-        <div class="project-card">
-          <img src="images/project-ministore.jpg" alt="Mini Store Web System" class="project-img">
-          <h3>Mini Store Web System</h3>
-          <p>A web system that stores and manages products like soap, milk, instant noodles, and shampoo.</p>
-          <p class="project-tech">HTML, CSS, JavaScript</p>
-          <a href="#lightbox-ministore" class="view-project">View Project</a>
-        </div>
-
-        <div class="project-card">
-          <img src="images/project-vehicleguard.jpg" alt="VehicleGuard" class="project-img">
-          <h3>VehicleGuard</h3>
-          <p>A mobile app that sends alerts to nearby registered users to help track or locate a stolen vehicle faster.</p>
-          <p class="project-tech">Flutter, Dart</p>
-          <a href="#lightbox-vehicleguard" class="view-project">View Project</a>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Project image lightboxes -->
-      <div id="lightbox-furniture" class="lightbox">
-        <a href="#projects" class="lightbox-close">&times;</a>
-        <img src="images/project-furniture.png" alt="Furniture Web System full view">
-      </div>
-
-      <div id="lightbox-ministore" class="lightbox">
-        <a href="#projects" class="lightbox-close">&times;</a>
-        <img src="images/project-ministore.jpg" alt="Mini Store Web System full view">
-      </div>
-
-      <div id="lightbox-vehicleguard" class="lightbox">
-        <a href="#projects" class="lightbox-close">&times;</a>
-        <img src="images/project-vehicleguard.jpg" alt="VehicleGuard full view">
-      </div>
-
-
-  <!-- Contact -->
-  <section id="contact" class="contact">
-
-    <h2>Get in touch</h2>
-
-    <p>
-      Open to feedback and collaboration.
-    </p>
-
-    <a class="contact-link" href="mailto:francascindy@gmail.com">
-      francascindy@gmail.com
-    </a>
-
-  </section>
-
-
   <!-- Activity 2 - Tell Your Story -->
    <!-- Section para sa Story-->
   <section id="about" class="about">
@@ -214,7 +146,6 @@
 
   </section>
 
-
   <!-- Activity 3 - Show Your Skills -->
    <!-- Section para sa Skills -->
   <section id="skills" class="skills">
@@ -257,6 +188,59 @@
 
   </section>
 
+
+
+  <!-- Activity 4 - Show Your Projects -->
+   <!-- Section para sa Projects -->
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <img src="images/project-furniture.png" alt="Furniture Web System" class="project-img">
+          <h3>Furniture Web System</h3>
+          <p>A web system that displays a list of furniture items along with their purposes.</p>
+          <p class="project-tech">JavaScript, React, HTML, CSS</p>
+          <a href="#lightbox-furniture" class="view-project">View Project</a>
+        </div>
+
+        <div class="project-card">
+          <img src="images/project-ministore.jpg" alt="Mini Store Web System" class="project-img">
+          <h3>Mini Store Web System</h3>
+          <p>A web system that stores and manages products like soap, milk, instant noodles, and shampoo.</p>
+          <p class="project-tech">HTML, CSS, JavaScript</p>
+          <a href="#lightbox-ministore" class="view-project">View Project</a>
+        </div>
+
+        <div class="project-card">
+          <img src="images/project-vehicleguard.jpg" alt="VehicleGuard" class="project-img">
+          <h3>VehicleGuard</h3>
+          <p>A mobile app that sends alerts to nearby registered users to help track or locate a stolen vehicle faster.</p>
+          <p class="project-tech">Flutter, Dart</p>
+          <a href="#lightbox-vehicleguard" class="view-project">View Project</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Project image lightboxes -->
+      <div id="lightbox-furniture" class="lightbox">
+        <a href="#projects" class="lightbox-close">&times;</a>
+        <img src="images/project-furniture.png" alt="Furniture Web System full view">
+      </div>
+
+      <div id="lightbox-ministore" class="lightbox">
+        <a href="#projects" class="lightbox-close">&times;</a>
+        <img src="images/project-ministore.jpg" alt="Mini Store Web System full view">
+      </div>
+
+      <div id="lightbox-vehicleguard" class="lightbox">
+        <a href="#projects" class="lightbox-close">&times;</a>
+        <img src="images/project-vehicleguard.jpg" alt="VehicleGuard full view">
+      </div>
+
+
   <!-- Activity 5 - Education and Experience -->
    <!-- section ni or row para sa education -->
 <section id="experience" class="experience">
@@ -298,6 +282,33 @@
       </tr>
     </tbody>
   </table>
+</section>
+
+
+<!-- Contact -->
+   <!-- Para sa Contact na part -->
+  <section id="contact" class="contact">
+  <h2>Get in touch</h2>
+  <p>Open to feedback and collaboration.</p>
+
+  <!-- Activity 7 - Contact Form -->
+  <form class="contact-form" action="mailto:francascindy@gmail.com" method="post" enctype="text/plain">
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Cindy A. Francas" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="francascindy@gmail.com" required>
+
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" placeholder="IT 110" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+    <button type="submit" class="send-btn">Send</button>
+
+  </form>
 </section>
 
 
