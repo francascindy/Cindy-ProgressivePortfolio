@@ -261,6 +261,7 @@ main {
 
 
 /* About - Activity 2 */
+/* Para sa About */
 .about {
   scroll-margin-top: 80px;
 }
@@ -290,6 +291,7 @@ main {
 
 
 /* Activity 3 - Show Your Skills */
+/* Para sa Skills */
 .skills {
   padding: 72px 0;
   border-bottom: 1px solid var(--line);
@@ -327,6 +329,7 @@ main {
 
 
 /* Contact */
+/* Para sa Contacts */
 .contact {
   padding: 72px 0;
 }
@@ -354,6 +357,7 @@ main {
 
 
 /* Footer */
+/* Sa Footer or sa pina ka last na part sa Page */
 .site-footer {
   max-width: 780px;
   margin: 0 auto;
@@ -392,6 +396,7 @@ main {
 }
 
 /* Activity 4 - Show Your Projects */
+/* Para sa Porjects na part */
 
 .projects {
   padding: 72px 0;
@@ -495,4 +500,50 @@ main {
   color: white;
   font-size: 2rem;
   line-height: 1;
+}
+
+/* Activity 5 - Education and Experience */
+/* Para sa Education na part */
+
+.experience {
+  padding: 72px 0;
+  border-bottom: 1px solid var(--line);
+  scroll-margin-top: 80px;
+}
+
+.experience h2 {
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+}
+
+.edu-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.edu-table th,
+.edu-table td {
+  padding: 12px 16px;
+  border: 1px solid var(--line);
+  text-align: left;
+}
+
+.edu-table th {
+  background: var(--blueprint);
+  color: white;
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+
+.edu-table tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive table - scrolls sideways on small screens instead of squeezing */
+@media (max-width: 600px) {
+  .edu-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
 }
