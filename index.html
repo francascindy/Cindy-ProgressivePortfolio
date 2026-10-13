@@ -11,15 +11,18 @@
     
 <body>
 
-  <header class="site-header">
+<!-- navigation-->
+<header class="site-header">
   <a href="#top" class="mark">CF</a>
+
   <nav id="site-nav">
     <a href="#top">Home</a>
-    <a href="#work">Work</a>
+    <a href="#projects">Projects</a>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
   </nav>
+
   <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
     <span></span>
     <span></span>
@@ -27,154 +30,241 @@
   </button>
 </header>
 
-  <main>
-    <section class="hero" id="top">
+<main>
 
-  <div class="hero-profile">
-    <img src="images/profile.jpg" alt="Cindy A. Francas" class="profile-photo">
-  </div>
+  <!-- Hero / Activity 1 -->
+  <section class="hero" id="top">
 
-  <p class="hero-meta">IT 110 — Web Systems and Technologies</p>
+    <div class="hero-layout">
 
-  <h1>Cindy A. Francas</h1>
+      
+      <div class="hero-profile">
 
-  <h2>Section: FGNOW1</h2>
+        <img
+          src="images/profile.jpg"
+          alt="Cindy A. Francas"
+          class="profile-photo"
+        
 
-  <p class="hero-sub">
-    I am a 4th Year Student in Information Technology who is passionate about
-    technology, web development, and creating useful solutions.
-  </p>
+        <h1>Cindy A. Francas</h1>
 
-  <p class="hero-tagline">
-    Aspiring IT professional and web developer.
-  </p>
-
- <a href="#about" class="learn-more">Learn More</a>
-
-  <div class="hero-coords">
-    <span>course: IT 110</span>
-    <span>status: building</span>
-    <span>ver: 0.1</span>
-  </div>
-
-</section>
-
-    <section id="work" class="work">
-      <h2>Selected work</h2>
-
-      <article class="project">
-        <div class="project-index">01</div>
-        <div class="project-body">
-          <h3>Project One</h3>
-          <p>I Created a mini store web system, that only stores products like soap, milk, instant, shampoos and other products.</p>
-          <ul class="tags">
-            <li>HTML</li>
-            <li>CSS</li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="project">
-        <div class="project-index">02</div>
-        <div class="project-body">
-          <h3>Project Two</h3>
-          <p>I Created also a Furniture Web System that only displays the lists of furnitures with their purposes.</p>
-          <ul class="tags">
-            <li>Web Systems</li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="project">
-        <div class="project-index">03</div>
-        <div class="project-body">
-          <h3>Project Three</h3>
-          <p>I Created a Sales Website system that tracks the stores stock, quantities, prices and sells.</p>
-          <ul class="tags">
-            <li>IT 110</li>
-          </ul>
-        </div>
-      </article>
-    </section>
-
-
-    <section id="contact" class="contact">
-      <h2>Get in touch</h2>
-      <p>Open to feedback and collaboration.</p>
-         <a class="contact-link" href="mailto:francascindy@gmail.com">francascindy@gmail.com</a>
-    </section>
-
-        <!-- Activity 2 - Tell Your Story -->
-    <section id="about" class="about">
-      <h2>About Me</h2>
-
-      <div class="about-block">
-        <h3>Short Bio</h3>
-        <p>I am Cindy A. Francas, a 4th year Information Technology student. I am passionately driven to create innovative projects that solve real-world problems and help our community.</p>
       </div>
 
-      <div class="about-block">
-        <h3>Hobbies and Interests</h3>
-        <ul class="about-list">
-          <li>Web development</li>
-          <li>Building small web systems</li>
-          <li>Exploring new technologies</li>
-        </ul>
+    
+      <div class="hero-content">
+
+        <p class="hero-meta">
+          IT 110 — Web Systems and Technologies
+        </p>
+
+        <h2>Section: FGNOW1</h2>
+
+        <p class="hero-sub">
+          I am a 4th Year Student in Information Technology who is passionate about
+          technology, web development, and creating useful solutions.
+        </p>
+
+        <p class="hero-tagline">
+          Aspiring IT professional and web developer.
+        </p>
+
+        <a href="#about" class="learn-more">
+          Learn More
+        </a>
+
+        <div class="hero-coords">
+          <span>course: IT 110</span>
+          <span>status: building</span>
+          <span>ver: 0.1</span>
+        </div>
+
       </div>
 
-      <div class="about-block">
-        <h3>Goals</h3>
-        <p>I aim to become a professional web developer who builds useful systems for people and organizations.</p>
-      </div>
+    </div>
 
-      <div class="about-block">
-        <h3>Background</h3>
-        <p>I am a 4th year IT student in section FGNOW1, currently taking IT 110 — Web Systems and Technologies. I have built a mini store system, a furniture web system, and a sales website system.</p>
+  </section>
+
+
+  <!-- Activity 4 - Show Your Projects -->
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <img src="images/project-furniture.png" alt="Furniture Web System" class="project-img">
+          <h3>Furniture Web System</h3>
+          <p>A web system that displays a list of furniture items along with their purposes.</p>
+          <p class="project-tech">JavaScript, React, HTML, CSS</p>
+          <a href="#lightbox-furniture" class="view-project">View Project</a>
+        </div>
+
+        <div class="project-card">
+          <img src="images/project-ministore.jpg" alt="Mini Store Web System" class="project-img">
+          <h3>Mini Store Web System</h3>
+          <p>A web system that stores and manages products like soap, milk, instant noodles, and shampoo.</p>
+          <p class="project-tech">HTML, CSS, JavaScript</p>
+          <a href="#lightbox-ministore" class="view-project">View Project</a>
+        </div>
+
+        <div class="project-card">
+          <img src="images/project-vehicleguard.jpg" alt="VehicleGuard" class="project-img">
+          <h3>VehicleGuard</h3>
+          <p>A mobile app that sends alerts to nearby registered users to help track or locate a stolen vehicle faster.</p>
+          <p class="project-tech">Flutter, Dart</p>
+          <a href="#lightbox-vehicleguard" class="view-project">View Project</a>
+        </div>
+
       </div>
     </section>
 
-
-        <!-- Activity 3 - Show Your Skills -->
-    <section id="skills" class="skills">
-      <h2>Skills</h2>
-
-      <div class="skills-grid">
-        <div class="skill-card">
-          <h3>HTML</h3>
-          <p>Building the structure of web pages.</p>
-        </div>
-        <div class="skill-card">
-          <h3>CSS</h3>
-          <p>Styling layouts, colors, and spacing.</p>
-        </div>
-        <div class="skill-card">
-          <h3>Web Development</h3>
-          <p>Creating small web systems and websites.</p>
-        </div>
-        <div class="skill-card">
-          <h3>Git and GitHub</h3>
-          <p>Tracking changes with version control.</p>
-        </div>
-        <div class="skill-card">
-          <h3>Problem Solving</h3>
-          <p>Breaking problems into clear steps.</p>
-        </div>
-        <div class="skill-card">
-          <h3>Teamwork</h3>
-          <p>Collaborating on class projects.</p>
-        </div>
+    <!-- Project image lightboxes -->
+      <div id="lightbox-furniture" class="lightbox">
+        <a href="#projects" class="lightbox-close">&times;</a>
+        <img src="images/project-furniture.png" alt="Furniture Web System full view">
       </div>
-    </section>
 
-  </main>
+      <div id="lightbox-ministore" class="lightbox">
+        <a href="#projects" class="lightbox-close">&times;</a>
+        <img src="images/project-ministore.jpg" alt="Mini Store Web System full view">
+      </div>
 
-  <footer class="site-footer">
-    <span>Built by Cindy A. Francas</span>
-    <span id="year"></span>
-  </footer>
+      <div id="lightbox-vehicleguard" class="lightbox">
+        <a href="#projects" class="lightbox-close">&times;</a>
+        <img src="images/project-vehicleguard.jpg" alt="VehicleGuard full view">
+      </div>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+
+    <h2>Get in touch</h2>
+
+    <p>
+      Open to feedback and collaboration.
+    </p>
+
+    <a class="contact-link" href="mailto:francascindy@gmail.com">
+      francascindy@gmail.com
+    </a>
+
+  </section>
+
+
+  <!-- Activity 2 - Tell Your Story -->
+  <section id="about" class="about">
+
+    <h2>About Me</h2>
+
+    <div class="about-block">
+
+      <h3>Short Bio</h3>
+
+      <p>
+        I am Cindy A. Francas, a 4th year Information Technology student.
+        I am passionately driven to create innovative projects that solve
+        real-world problems and help our community.
+      </p>
+
+    </div>
+
+
+    <div class="about-block">
+
+      <h3>Hobbies and Interests</h3>
+
+      <ul class="about-list">
+        <li>Web development</li>
+        <li>Building small web systems</li>
+        <li>Exploring new technologies</li>
+      </ul>
+
+    </div>
+
+
+    <div class="about-block">
+
+      <h3>Goals</h3>
+
+      <p>
+        I aim to become a professional web developer who builds useful
+        systems for people and organizations.
+      </p>
+
+    </div>
+
+
+    <div class="about-block">
+
+      <h3>Background</h3>
+
+      <p>
+        I am a 4th year IT student in section FGNOW1, currently taking
+        IT 110 — Web Systems and Technologies. I have built a mini store
+        system, a furniture web system, and a sales website system.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- Activity 3 - Show Your Skills -->
+  <section id="skills" class="skills">
+
+    <h2>Skills</h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <h3>HTML</h3>
+        <p>Building the structure of web pages.</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>CSS</h3>
+        <p>Styling layouts, colors, and spacing.</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Web Development</h3>
+        <p>Creating small web systems and websites.</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Git and GitHub</h3>
+        <p>Tracking changes with version control.</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Problem Solving</h3>
+        <p>Breaking problems into clear steps.</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Teamwork</h3>
+        <p>Collaborating on class projects.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+  <span>Built by Cindy A. Francas</span>
+
+  <span id="year"></span>
+
+</footer>
+
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
