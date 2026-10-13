@@ -36,6 +36,7 @@ a {
 
 
 /* Navigation */
+/* Activity 6: sticky navbar */
 .site-header {
   position: sticky;
   top: 0;
@@ -46,6 +47,7 @@ a {
   padding: 20px 24px;
 }
 
+/* Activity 6: flexbox layout for nav links */
 #site-nav {
   display: flex;
   gap: 24px;
@@ -59,6 +61,7 @@ a {
   transition: color 0.15s ease, border-color 0.15s ease;
 }
 
+/* Activity 6: hover effect on nav links */
 #site-nav a:hover {
   color: var(--blueprint);
   border-color: var(--blueprint);
