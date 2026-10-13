@@ -102,35 +102,28 @@ a {
 }
 
 
-/* Mobile Navigation */
+/* Activity 8 - Mobile nav (no JS yet, so just wrap the links) */
+/* Para mo work sya sa phones or devices */
 @media (max-width: 600px) {
 
   .nav-toggle {
-    display: flex;
+    display: none;
   }
 
   #site-nav {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    gap: 0;
-    background: var(--paper);
-    border-bottom: 1px solid var(--line);
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.25s ease;
-  }
-
-  #site-nav.open {
-    max-height: 240px;
+    flex-wrap: wrap;
+    gap: 12px 16px;
   }
 
   #site-nav a {
-    padding: 16px 24px;
-    border-bottom: 1px solid var(--line);
+    font-size: 13px;
   }
+}
+
+/* Activity 8 - Tablet adjustment */
+@media (max-width: 900px) {
+  main { padding: 0 16px; }
+  .hero-layout { gap: 24px; }
 }
 
 
@@ -504,6 +497,7 @@ main {
 
 .contact-form input,
 .contact-form textarea {
+  width: 100%;
   padding: 10px;
   border: 1px solid var(--line);
   border-radius: 6px;
